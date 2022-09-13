@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#root {
+    margin-bottom: 60px;
+}
+/* Icons */
+.cart, .login-icon, .logout-icon {
+    width: 25px;
+    height: 25px;
+    margin-left: 8px;
+}
+
+.errorIcon {
+    width: 40px;
+    height: 40px;
+}
+
+.trash-icon {
+    width: 15px;
+    height: 15px;
+    color: 	rgb(223, 71, 89);
+}
+
+.chevron {
+    width:  30px;
+    height: 30px;
+}
+
+.chevron-scroll {
+    width: 2rem;
+}
+
+.arrow {
+    cursor: pointer;
+}
+
+.arrow:hover {
+    color: gray;
+}
+
+.arrow-container {
+    border-radius: 50%;
+}
+
+.success-icon {
+    width: 60px;
+    height: 60px;
+    color: rgb(223, 71, 89);
+}
+/* Latest products scroll */
+.react-horizontal-scrolling-menu--scroll-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+.react-horizontal-scrolling-menu--scroll-container {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  
+/* Nav Bar */
+.nav {
+    background-color: transparent;
+}
+
+.link {
+    color: black;
+}
+
+.link:hover {
+    color: gray;
+}
+
+/* Home Page */
+.home-hero-img {
+    height: 23rem;
+    object-fit: cover;
+}
+
+/* Card */
+.item-card-title {
+    font-size: 0.8rem;
+    color: rgb(105, 64, 64);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.item-card-button {
+    width: 100%;
+}
+
+.item-card:hover {
+    border: 1px solid skyblue;
+}
+
+.cart-img {
+    width: 8rem;
+}
+
+/* Products*/
+.products {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+}
+
+@media (min-width: 600px) {
+    .products { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 900px) {
+    .products { grid-template-columns: repeat(3, 1fr); }
+}
+
+.prod-nav-button:hover {
+    transform: scale(1.1) !important;
+}
+
+.form-page {
+    width: 80vw;
+}
+
+.checkout {
+    width: 18rem;
+}
+
+.error-page {
+    padding: 10rem;
+}
+
+.error-code {
+    font-size: 8rem;
+}
