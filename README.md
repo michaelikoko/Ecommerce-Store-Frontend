@@ -1,46 +1,33 @@
-# Getting Started with Create React App and Redux
+# Ecommerce-Store-Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+An ecommerce store web application, which recieves api data from a Django backend.
 
-## Available Scripts
+User uthentication is done using JWT.
 
-In the project directory, you can run:
+The live project can be found [here](https://amp-electronics.vercel.app)
 
-### `npm start`
+## Tools used
+* React
+* React router
+* Redux toolkit
+* React Bootstrap and Bootstrap
+* Axios
+* React Stripe Checkout
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Pages
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Landing Page
 
-### `npm test`
+![Screenshot 2022-09-17 190507](https://user-images.githubusercontent.com/84211856/190871417-a1330269-60b9-4ae9-abf1-b1e6f1f8c839.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Products Page
+This page displays available products. Products can be filtered, and searched.
+![Screenshot 2022-09-17 190734](https://user-images.githubusercontent.com/84211856/190871475-bf82cd24-6a3c-40e0-8102-72381fadb903.png)
 
-### `npm run build`
+### Cart Page
+This page displays the items added to the cart by the user.
+![Screenshot 2022-09-17 190900](https://user-images.githubusercontent.com/84211856/190871489-47b8e396-09e0-4963-ab8c-0dc1c9cc3797.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Order History Page
+This page displays purchases made by the user after checkout.
+![Screenshot 2022-09-17 191433](https://user-images.githubusercontent.com/84211856/190871594-87ee7b2f-136c-4103-9ac9-f051ea345785.png)
