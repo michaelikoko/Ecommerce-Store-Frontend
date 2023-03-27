@@ -3,9 +3,7 @@
     margin: 0;
 }
 
-#root {
-    margin-bottom: 60px;
-}
+
 /* Icons */
 .cart, .login-icon, .logout-icon {
     width: 25px;
@@ -75,7 +73,7 @@
 
 /* Home Page */
 .home-hero-img {
-    height: 23rem;
+    height: calc(90vh - 55px);
     object-fit: cover;
 }
 

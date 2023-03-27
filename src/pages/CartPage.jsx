@@ -17,7 +17,7 @@ export default function CartPage()
     
     if (!cartItems.length) {
         return (
-            <section className="container mt-5 d-flex flex-column justify-content-center align-items-center">
+            <section className="container mt-5 d-flex flex-column justify-content-start align-items-center" style={{minHeight: 'calc(100vh - 55px)'}}>
                 <h3>Your cart is empty</h3>
                 <Button variant="secondary" className="mt-4" onClick={()=> navigate("/products")}>Start shopping</Button>
             </section>
@@ -109,7 +109,7 @@ export default function CartPage()
                 </Modal.Body>
             </Modal>
 
-            <section className="container mt-4 d-flex flex-column">
+            <section className="container mt-4 d-flex flex-column" style={{minHeight: 'calc(100vh - 55px)'}}>
                 <section className="header d-flex flex-row justify-content-between border-bottom border-dark">
                     <h1 className="ms-3 text-bold text-secondary">Cart</h1>
                     <button 

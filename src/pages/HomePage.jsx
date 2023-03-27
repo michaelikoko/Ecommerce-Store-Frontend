@@ -11,7 +11,7 @@ export default function HomePage()
   const { latestProducts, isLoading, loadingFailed } = useSelector( store => store.latestProducts)
   const navigate = useNavigate()
     return (
-        <section className="home">
+        <section className="home mb-5">
           <Carousel className="home-hero">
             <Carousel.Item>
               <img
@@ -50,9 +50,11 @@ export default function HomePage()
             </Carousel.Item>
           </Carousel>
 
-          <section className="latest-products mt-5 container">
-            <h2 className="mb-4 text-center border-bottom p-1">Featured Products</h2>
-            <LatestProducts isLoading={isLoading} loadingFailed={loadingFailed} latestProducts={latestProducts}/>
+          <section className="latest-products my-4 container py-5">
+            <h2 className="my-4 text-center border-bottom p-1">Featured Products</h2>
+            <div className="my-4">
+              <LatestProducts isLoading={isLoading} loadingFailed={loadingFailed} latestProducts={latestProducts}/>
+            </div>
           </section>
         </section>
     )

@@ -14,7 +14,7 @@ export default function SingleOrderPage()
     if (!order) return <ErrorPage />
 
     return (
-        <section className="container mt-4">
+        <section className="container mt-4" style={{minHeight: 'calc(100vh - 55px)'}}>
             <Button variant="secondary" onClick={()=>navigate("/orders")}>Back to orders</Button>
 
             <h2 className="mt-4 mb-4">ORDER NO: {order.order_number}</h2>

@@ -18,7 +18,7 @@ export default function SingleProductPage()
     if (!product) return <ErrorPage />
 
     return(
-        <section className="single-product container p-3">
+        <section className="single-product container p-3" style={{minHeight: 'calc(100vh - 55px)'}}>
             <Button variant="secondary" onClick={()=>navigate("/products")}>Back to products</Button>
             <div className="card mb-3 mt-3" style={{maxWidth: "80rem"}}>
                 <div className="row g-0">

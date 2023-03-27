@@ -16,7 +16,7 @@ export default function OrdersPage()
     )
     
     if (isLoading) return (
-        <section className="orders container mt-4">
+        <section className="orders container mt-4" style={{minHeight: 'calc(100vh - 55px)'}}>
             <h2 className="mt-4">ORDER HISTORY</h2>
             <div className="d-flex justify-content-center align-items-center">
                 <Spinner animation="border" />
@@ -25,14 +25,14 @@ export default function OrdersPage()
     )
 
     if (loadingFailed) return (
-        <section className="orders container mt-4">
+        <section className="orders container mt-4" style={{minHeight: 'calc(100vh - 55px)'}}>
             <h2 className="mt-4">ORDER HISTORY</h2>
             <NetworkError />
         </section>
     )
 
     return (
-        <section className="orders container mt-4">
+        <section className="orders container mt-4" style={{minHeight: 'calc(100vh - 55px)'}}>
             <h2 className="mt-4">ORDER HISTORY</h2>
                 <Table hover responsive className="mt-4">
                 <thead>

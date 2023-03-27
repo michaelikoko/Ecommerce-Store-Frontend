@@ -31,7 +31,7 @@ export default function ProductsPage()
         <>
             <ProductsNav />
 
-            <section className="products-page d-flex flex-column align-items-center mt-3">
+            <section className="products-page d-flex flex-column align-items-center mt-3 py-5">
                 <div className="d-flex flex-row align-items-start">
                     <AllProducts allProducts={products} isLoading={isLoading} loadingFailed={loadingFailed} />
                 </div>

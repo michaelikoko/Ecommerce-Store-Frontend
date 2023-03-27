@@ -52,9 +52,9 @@ export default function LoginPage()
 
             </Modal>
 
-            <section className=" d-flex flex-column justify-content-center align-items-center">
+            <section className=" d-flex flex-column justify-content-start align-items-center mt-5" style={{minHeight: 'calc(100vh - 55px)'}}>
                 <Form className="form-page d-flex flex-column justify-content-center align-items-center p-4" onSubmit={handleSubmit}>
-                    <h1 className="text-secondary">Sign In</h1>
+                    <h1 className="text-secondary mb-5">Sign In</h1>
                     <FloatingLabel
                         controlId="floatingInput"
                         label="Email address"

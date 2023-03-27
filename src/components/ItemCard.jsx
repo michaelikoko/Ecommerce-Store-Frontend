@@ -9,7 +9,7 @@ export default function ItemCard({product})
 
     return (
         <NavLink to={`/products/${product.id}`} className="text-decoration-none">
-            <div className="d-flex flex-column card p-2 align-items-center justify-content-between item-card">
+            <div className="d-flex flex-column card p-2 align-items-center justify-content-between item-card" style={{height: "25rem"}}>
                 <img alt="" src={product.image} className="card-img" style={{"width":"200px", "height":"200px"}}/>
                 <div className="d-flex flex-column justify-content-center align-items-start w-100">
                     <p className="item-card-title fw-bold text-start">{product.name}</p>
